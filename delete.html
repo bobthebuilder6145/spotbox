@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpotBox — Delete Your Account</title>
+<style>
+  :root {
+    --ink: #1F1B16;
+    --stone: #FDFBF6;
+    --stone-var: #F3EEE4;
+    --muted: #6B5F53;
+    --bronze: #B68235;
+    --rule: #E7DFD1;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--stone); color: var(--ink); }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 24px; margin-bottom: 32px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--bronze); font-weight: 600; }
+  h1 {
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.1;
+    margin: 12px 0 8px;
+  }
+  .meta { color: var(--muted); font-size: 14px; }
+  h2 {
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin: 40px 0 12px;
+  }
+  p, li { color: var(--ink); }
+  a { color: var(--bronze); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  a:hover { border-bottom-color: var(--bronze); }
+  ol { padding-left: 22px; }
+  ol li { margin-bottom: 6px; }
+  .callout {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 24px 0;
+  }
+  .mailto {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 20px;
+    background: var(--ink);
+    color: var(--stone);
+    border-radius: 999px;
+    border-bottom: none;
+    font-weight: 600;
+  }
+  .mailto:hover { background: #000; }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">SpotBox</div>
+    <h1>Delete your account</h1>
+    <div class="meta">Two ways to remove your data. Both wipe everything.</div>
+  </header>
+
+  <h2>Option 1 — Delete from inside the app (fastest)</h2>
+  <ol>
+    <li>Open <strong>SpotBox</strong> on your phone.</li>
+    <li>Tap the <strong>Profile</strong> tab (bottom-right).</li>
+    <li>Scroll to the bottom → <strong>Danger Zone</strong>.</li>
+    <li>Tap <strong>Delete account</strong> → confirm.</li>
+  </ol>
+  <p>This immediately removes everything and cannot be undone.</p>
+
+  <h2>Option 2 — Ask us to delete it for you</h2>
+  <p>If you can't open the app or would rather we do it, email us from the address linked to your Google account and we'll delete your account within 7 days.</p>
+  <div class="callout">
+    <strong>Email:</strong> <a href="mailto:bobthebuilder6145@gmail.com?subject=SpotBox%20account%20deletion%20request">bobthebuilder6145@gmail.com</a><br>
+    <strong>Subject line:</strong> <code>SpotBox account deletion request</code><br>
+    <a class="mailto" href="mailto:bobthebuilder6145@gmail.com?subject=SpotBox%20account%20deletion%20request">Send deletion request</a>
+  </div>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>Every place, collection, trip, journal entry and tag you saved.</li>
+    <li>Your Firebase Auth user record (email, name, profile picture URL, uid).</li>
+    <li>Every cover photo and thumbnail cached on your device.</li>
+  </ul>
+  <p>
+    Nothing is retained. There is no backup, no recovery period, no separate archive. Once
+    deleted, the data is gone.
+  </p>
+
+  <h2>Non-personal data</h2>
+  <p>
+    SpotBox does not collect analytics, crash reports, or advertising IDs, so there is nothing
+    else to purge on our side.
+  </p>
+
+  <footer>
+    &copy; 2026 SpotBox · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a>
+  </footer>
+</div>
+</body>
+</html>
